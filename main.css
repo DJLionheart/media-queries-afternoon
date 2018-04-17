@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Merriweather:300i|Montserrat:700');
+
+
+header{
+    color: #ffc107;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    padding: 15px;
+}
+
+
+.mobile_nav {
+    color: rgba(255, 0, 0, 0);
+    height: 0px;
+
+  }
+
+  .mobile_nav_open {
+    position: fixed;
+    background: red;
+    width: 100%;
+    /* background: #22252a; */
+    height: 214px;
+    color: white;
+    /* background: #999; */
+    top: 50px;
+    transition: all 0.5s ease;
+    animation: slide_out 2s;
+    /* other keywords like "infinite alternate" can be useful here */
+  }
+  
+.mobile_menu_container {
+    width: 75%;
+    height: calc(30vh - 55px);
+    background: #999;
+    position: fixed;
+    top: -100;
+    transition: all 0s ease;
+    animation: slide_out 0.4s;
+}
+
+.mobile_menu_open .mobile_menu_container {
+    top: 0;
+}
+
+  @keyframes slide_out {
+    0%   { 
+        height: 0;
+    }
+
+    100% { 
+        height: 214px; 
+    }
+  }
+
+.desktop_nav {
+    display: none;
+}
+    
+.desktop_nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    color: rgba(0,0,0,0.6);
+    font-size: .8rem;
+}
+
+/* div {
+    display: block;
+} */
+
+
+.mobile_header {
+    /* padding: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #22252a;
+    height: 50px;
+    width: 100%;
+    position: fixed; 
+}
+
+.btn_box {
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    border-radius: 5px;
+}
+.mobile_menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fed236;
+    width: 80px;
+    height: 35px; 
+    font-size: 12px;
+    font-weight: 0;
+}
+
+.page_head {
+    width: 100%;
+    background-image: url('./img/header-bg.jpg');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0 5px 0;
+}
+
+.page_head h1 {
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.welcome_text {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.learn_more {
+    margin-top: 15px;
+    background: #fed236;
+    width: 225px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media(min-width: 576px) {
+    /* .page_head {
+        max-width: 540px;
+    } */
+
+}
+
+@media(min-width: 768px) {
+    /* .page_head{
+        max-width: 720px;
+    } */
+
+}
+
+@media(min-width: 992px) {
+    /* .page_head{
+        max-width: 960px;
+    } */
+
+}
+
+
